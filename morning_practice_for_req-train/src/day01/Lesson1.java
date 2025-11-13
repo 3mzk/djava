@@ -20,8 +20,28 @@ package day01;
 public class Lesson1 {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
-
+		System.out.println("出力します");
+		 int num =12;	//12を代入する
+		 double f;		
+		 		f=1.8;	//1.8を代入する
+		String str;
+				str="こんにちは";	//"こんにちは"を代入する
+		boolean b; b=true; 
+				boolean b1 =true;	//trueを代入する
+		System.out.print(num+"\n"+f+"\n"+str+"\n"+b1);
 	}
 
 }
+		
+	
+		
+		//解答
+//		int num=12; 
+//		double dnum=1.6; 
+//		String hello ="こんにちは"; 
+//		boolean b =true; 
+//		System.out.println(hello+"\n"+b);
+		
+		
+
+
