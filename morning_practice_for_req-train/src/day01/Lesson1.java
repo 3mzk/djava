@@ -27,8 +27,8 @@ public class Lesson1 {
 		String str;
 				str="こんにちは";	//"こんにちは"を代入する
 		boolean b; b=true; 
-				boolean b1 =true;	//trueを代入する
-		System.out.print(num+"\n"+f+"\n"+str+"\n"+b1);
+				
+		System.out.print(num+"\n"+f+"\n"+str+"\n"+b);
 	}
 
 }
@@ -36,6 +36,7 @@ public class Lesson1 {
 	
 		
 		//解答
+
 //		int num=12; 
 //		double dnum=1.6; 
 //		String hello ="こんにちは"; 
