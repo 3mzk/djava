@@ -15,7 +15,10 @@
 
 package day02;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 public class Lesson3 {
 
@@ -25,8 +28,31 @@ public class Lesson3 {
 		int average = 0;// 平均金額
 		int inputCount = 0;//入力した回数
 
-		/*ここから記入*/
+		System.out.println("金額①を入力してください>>");
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 String str1 = reader.readLine();
+		 int num1 = Integer.parseInt(str1);
+		
+		 System.out.println("金額①を入力してください>>");
+		// BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 String str2 = reader.readLine();
+		 int num2 = Integer.parseInt(str2);
+		 
+		 System.out.println("金額①を入力してください>>");
+		 //BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 String str3 = reader.readLine();
+		 int num3 = Integer.parseInt(str3);
+		 
+		 sum =(int) (num1*1.08 + num2*1.08 + num3*1.08);
+		  int isum = (int)sum ;
+		
+		System.out.println("①から③の合計は税込み" + isum + "円");
+		System.out.println("①から③の平均は税込み" + isum/3 + "円");
 
 	}
 
 }
+
+
+// Bufferedreader, readlineは一回でいい
