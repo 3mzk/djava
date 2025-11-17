@@ -21,13 +21,37 @@ input number[0or1]? >>2
 */
 package day03;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Lesson5 {
 
 	public static void main(String[] args) throws IOException {
-		/*ここから記入*/
+		
+		
+		//int[] height = new int [2];
+		//height[0] =0;
+		//height[1] =1;
 
+		System.out.println("input number[0or1]? >>");
+		 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		 String str = reader.readLine();
+		 int inum = Integer.parseInt(str);
+		 boolean[] b = {true,false};
+		 
+		 switch (inum) {
+		 case 0:
+			 System.out.println("配列の"+ inum +"は"+ b[inum]);
+			 break;
+		 
+		 case 1:
+			 System.out.println("");
+			 break;
+		default:
+			 System.out.println("");
+		 }
+			 
 	}
 
 }

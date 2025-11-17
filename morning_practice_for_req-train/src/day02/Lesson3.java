@@ -55,4 +55,6 @@ public class Lesson3 {
 }
 
 
+	//inputCount++ 入力した回数を１増やす
+
 // Bufferedreader, readlineは一回でいい
