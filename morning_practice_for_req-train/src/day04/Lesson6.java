@@ -13,6 +13,7 @@
  【出力例】
 カンマ区切りで配列を出力します
 鈴木,田中,佐藤
+ススキを文字列連結させる
 */
 
 package day04;
@@ -20,8 +21,34 @@ package day04;
 public class Lesson6 {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		int[] height = new int[3];
+		height[0] = ("鈴木");
+		 
 
 	}
 
 }
+
+
+//解答
+
+
+string[] names = {"鈴木",};
+string nameOutput = "";   //文字列を足す
+
+for (int i = 0; i<names, length; i++) {
+	nameOutput += names[1],
+				if(i !=names,length - 1) {
+					nameOutput ++= ",";
+				}
+			
+}
+ printlb(nameOuput)
+			
+
+
+
+
+
+
+
