@@ -21,7 +21,9 @@
 //  ・戻り値の型：boolean
 //  ・メソッド名：checkId
 //  ・引数：int型
-//  処理：引数の値が1111または2222の場合はtrue、
+//  処理：引数の値が1111または2222の場合はtrue、d
+
+
 //  　上記以外の数字の場合はfalseをreturnする。
 //  　※boolean型の変数をreturnしてもよい。
 // 
@@ -33,7 +35,8 @@
 //  ・while文（未ログイン状態なら繰り返す。）
 //  		whileブロックの中に
 //  		・ConsoleReaderクラスのinputId()を呼び出す
-//  		・上記のコンソール入力値を引数にしてValidationクラスのcheckId(id)を呼び出す。
+//  		・上記のコンソール入力値を引数にして
+//           ValidationクラスのcheckId(id)を呼び出す。
 //  		・checkIdの結果がtrueならログイン成功。ループから抜ける処理をする。
 //  		・checkIdの結果がfalseならログイン失敗。ループにもどる。
 // 
@@ -54,13 +57,50 @@
 
 package day05.q02;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
-		/*ここから記入*/
+		
+		System.out.println("4ケタのログインIDを入力してください\n"	+ "//input id? >>");
+		
+		
+		ConsoleReader Id = new ConsoleReader();		
+		Validation vali = new Validation(); //obj
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		
+		
+		vali.checkId(Id.inputId());
+		
+		
+		//String str = reader.readLine();
+		// int id = Integer.parseInt(str);
+		 boolean flag =false;
+		int id;
+	
+		
+		
+	
 
+		
+		while (flag) { 
+		Id.inputId();  //引数なし
+		vali.checkId(Id.inputId());
+			
+		 System.out.println("ログインできません\n"
+				+ "もう一度入力してください");
+		 flag = true;  //条件
+			
+		}
+		
+		System.out.println("ログインに成功しました\n"
+			+ "ようこそ、ID:" + "さん");
+		
+		
+		
 	}
 
 }

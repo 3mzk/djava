@@ -31,12 +31,33 @@
 
 package day05.q01;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
-		/*ここから記入*/
+		
+		System.out.println("商品の税込み金額（消費税10％）を計算します。\n"
+				+ "税抜き金額を入力してください。\n" + "input money?>>");
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String str = reader.readLine();
+		double c = Integer.parseInt(str);
+		
+		
+		//オブジェクト
+		CashRegister cash = new CashRegister();
+	
+		// cf.p64 リターン値？
+		cash.calcprice(c);
+		
+
+		
+		
+		
+		
 
 	}
 
