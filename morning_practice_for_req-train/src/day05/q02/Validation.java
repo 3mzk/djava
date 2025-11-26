@@ -10,7 +10,7 @@ package day05.q02;
 
 public class Validation {
 	
-	//boolean t = true;
+	
 	boolean f = false;
 	 
 	 int id;
@@ -21,6 +21,8 @@ public class Validation {
 	 } else {
 		 return f;
 	 }
+	 
+	 
 	 }
 }
 

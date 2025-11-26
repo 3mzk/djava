@@ -32,6 +32,7 @@
 //  ・ConsoleReaderとValidationのオブジェクトを生成
 //  ・ログイン状態を判定するboolean型の変数を宣言
 //  ・ID番号を格納するint型の変数を宣言
+
 //  ・while文（未ログイン状態なら繰り返す。）
 //  		whileブロックの中に
 //  		・ConsoleReaderクラスのinputId()を呼び出す
@@ -57,9 +58,7 @@
 
 package day05.q02;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 class Main {
 
@@ -70,31 +69,29 @@ class Main {
 		
 		ConsoleReader Id = new ConsoleReader();		
 		Validation vali = new Validation(); //obj
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		
 		
-		vali.checkId(Id.inputId());
-		
-		
-		//String str = reader.readLine();
-		// int id = Integer.parseInt(str);
-		 boolean flag =false;
-		int id;
+		boolean f =false;
 	
-		
-		
+		 
 	
-
+		int id=0;
 		
-		while (flag) { 
-		Id.inputId();  //引数なし
-		vali.checkId(Id.inputId());
+		Id.inputId() ;
+		
+		do{	
+			
+		Id.inputId() ;  //引数なし
+		vali.checkId(id);
 			
 		 System.out.println("ログインできません\n"
 				+ "もう一度入力してください");
-		 flag = true;  //条件
+		
+		 
+		 f = true;  //条件
+		break;
 			
-		}
+		} while (f);
 		
 		System.out.println("ログインに成功しました\n"
 			+ "ようこそ、ID:" + "さん");

@@ -44,15 +44,16 @@ class Main {
 		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String str = reader.readLine();
-		double c = Integer.parseInt(str);
+		int c = Integer.parseInt(str);
 		
 		
 		//オブジェクト
 		CashRegister cash = new CashRegister();
 	
-		// cf.p64 リターン値？
-		cash.calcprice(c);
-		
+		// cf.p64 リターン値？ Sysoutここに書く
+		int c2 = cash.calcprice(c);//戻り値をintで
+		System.out.println("税抜き価格" + c);
+		System.out.println("税込み価格" + c2);
 
 		
 		

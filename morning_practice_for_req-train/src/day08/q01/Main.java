@@ -57,7 +57,10 @@ class Main {
 		magic.attack(magicMp);
 
 		/*ここから記入*/
-
+		
+		Sorcerer sorce = new Sorcerer("mahou");
+		int tsuika;
+		sorce.attack(tsuika);
 	}
 
 }

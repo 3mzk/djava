@@ -39,8 +39,27 @@ package day06.q01;
 class Main {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
-
+		Phone ph = new Phone();
+		ph.initFee();
+		
+		ph.call(); //任意の回数 回数分加算するには？
+		
+		ph.call();
+		ph.call();
+		ph.call(); 
+		
+	
+		System.out.println(ph.getFee());
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
