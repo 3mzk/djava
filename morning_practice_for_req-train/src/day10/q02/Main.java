@@ -23,10 +23,43 @@
 
 package day10.q02;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
-	}
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str;
+		
+	try {
+		System.out.println("1から任意の値までの合計を求めます\n" + "input num? >>");
+		str = br.readLine();
+		int num = Integer.parseInt(str);
+		int sum = 0;
+        for (int i = 1; i <= num; i++) {
+            sum += i;
+        }
+        
+        System.out.println("1から" + num + "までの合計は" + sum );
+        
+        List<String> nums = new ArrayList<>();
+        for (int i = 0; i < nums.size(); i++) {
+  
+    	
+        System.out.println("要素" + nums.get(i));
+        }
 
+        } catch (NumberFormatException | IOException e) {   //readLine→IOeを追加
+		System.out.println("例外が発生しました");
+		e.printStackTrace();
+	}
+	}
+   
 }
+
+	
